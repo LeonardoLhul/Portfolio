@@ -1,4 +1,31 @@
 body {
-    background-color: black;
-    color: white;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f6f6f6;
+}
+
+.titulo-destaque {
+    color: #22d4fd;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo {
+    width: 615px;
+}
+
+.titulo {
+    font-size: 34px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.paragrafo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
