@@ -1,7 +1,18 @@
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
 body {
     box-sizing: border-box;
-    background-color: #000000;
-    color: #f6f6f6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -14,15 +25,15 @@ body {
 }
 
 .linkmenucabecalho {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22d4fd;
-
+    color: var(--cor-terciaria);
+    text-decoration: none;
 }
 
 .titulo-destaque {
-    color: #22d4fd;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -41,12 +52,12 @@ body {
 
 .titulo {
     font-size: 34px;
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-primaria);
 }
 
 .paragrafo {
     font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .botao {
@@ -65,38 +76,44 @@ body {
     border-radius: 8px;
     font-size: 24px;
     padding: 21.5px 0;
-    text-decoration: none;  
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
-    border: 3px solid #22d4fd;
+    border: 3px solid var(--cor-terciaria);
     display: flex;
 }
 
 .foto {
     width: 480px;
     height: 640px;
+    border-radius: 10px;
 }
 
 .rede {
     align-items: center;
-    font-family: 'Krona One', 'sans-serif';
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
 
 .link:hover {
-    background-color: #272727;
-    transform: scale(1.07);
+    background-color: var(--cor-hover);
+    transform: scale(1.03);
     transition: 0.3s ease-in-out;
 }
 
 .rodape {
     padding: 23.64px;
-    color: #000000;
-    background-color: #22d4fd;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
+}
+
+.linkmenucabecalho:hover {
+    color: var(--cor-secundaria);
+    transition: 0.2s ease-in-out;
 }
