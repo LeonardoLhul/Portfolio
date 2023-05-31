@@ -16,7 +16,7 @@ body {
 }
 
 .cabecalho {
-    padding: 2% 0 0 15%;
+    padding: 2% 0 2% 15%;
 }
 
 .menucabecalho {
@@ -26,7 +26,7 @@ body {
 
 .linkmenucabecalho {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -37,30 +37,32 @@ body {
 }
 
 .apresentacao {
-    padding: 4% 15%;
+    padding: 1.44% 13%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .conteudo {
-    width: 615px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .titulo {
-    font-size: 34px;
+    font-size: 1.7rem;
     font-family: var(--fonte-primaria);
 }
 
 .paragrafo {
-    font-size: 24px;
+    font-size: 1.2rem;
     font-family: var(--fonte-secundaria);
 }
 
 .botao {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -69,12 +71,12 @@ body {
 }
 
 .link {
-    width: 378px;
+    width: 51%;
     justify-content: center;
     gap: 15px;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.2rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
@@ -85,8 +87,7 @@ body {
 }
 
 .foto {
-    width: 480px;
-    height: 640px;
+    width: 39.5%;
     border-radius: 10px;
 }
 
@@ -94,12 +95,12 @@ body {
     align-items: center;
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.3rem;
 }
 
 .link:hover {
     background-color: var(--cor-hover);
-    transform: scale(1.03);
+    transform: scale(1.05 );
     transition: 0.3s ease-in-out;
 }
 
@@ -109,11 +110,28 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
 .linkmenucabecalho:hover {
     color: var(--cor-secundaria);
     transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 900px) {
+    .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+}
+    .cabecalho {
+    padding: 10%;
+}
+.menucabecalho{
+     justify-content: center;
+}
+
+.conteudo{
+    width: auto;
+}
 }
