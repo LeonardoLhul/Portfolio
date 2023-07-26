@@ -86,8 +86,24 @@ body {
     display: flex;
 }
 
+.linkcertficado  {
+    width: 51%;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    border: 3px solid var(--cor-terciaria);
+    display: flex;
+}
+
 .foto {
-    width: 39.5%;
+    width: 37%;
     border-radius: 10px;
 }
 
